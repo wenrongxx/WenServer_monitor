@@ -1,0 +1,71 @@
+
+/* WenServer monitor polish */
+:root {
+  --ws-bg: #0f1419;
+  --ws-card: #ffffff;
+  --ws-ink: #1b1b1b;
+  --ws-muted: #5f6a75;
+  --ws-gold: #e0b13a;
+  --ws-gold-hi: #f0c85a;
+  --ws-gold-deep: #b8862a;
+  --ws-green: #2fbf71;
+}
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif !important;
+  line-height: 1.5 !important;
+  background: var(--ws-bg) !important;
+}
+#header {
+  background:
+    radial-gradient(900px 320px at 80% -20%, rgba(224,177,58,.2), transparent 60%),
+    linear-gradient(180deg, #121a26 0%, #0f1419 100%) !important;
+  color: var(--ws-gold-hi) !important;
+  padding: 28px 0 56px !important;
+  border-bottom: 1px solid #2a3542;
+}
+#header .logo {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 22px !important; font-weight: 800 !important;
+  letter-spacing: 0.03em;
+  color: var(--ws-gold-hi) !important;
+}
+#header .navi a {
+  margin-left: 14px !important;
+  padding: 0.28rem 0.7rem !important;
+  border-radius: 999px !important;
+  border: 1px solid transparent;
+  color: #e8eef5 !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+#header .navi a:visited { color: #e8eef5 !important; }
+#header .navi a:hover {
+  color: var(--ws-gold-hi) !important;
+  border-color: rgba(224,177,58,.5);
+  background: rgba(224,177,58,.1);
+}
+#header .navi a:first-child {
+  background: linear-gradient(180deg, #f0c85a, #c49220) !important;
+  color: #1a1a1a !important;
+  border-color: #f6e3a8 !important;
+  box-shadow: 0 2px 0 #8a6514 !important;
+}
+#header .navi a:first-child:hover { color: #1a1a1a !important; filter: brightness(1.08); }
+#uptime {
+  background: #f7f2e8 !important;
+  border: 1px solid rgba(224,177,58,.55) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 12px 32px rgba(0,0,0,.28) !important;
+  margin-top: -36px !important;
+}
+#uptime .site { border-bottom: 1px dashed rgba(0,0,0,.12) !important; }
+#uptime .site:last-child { border-bottom: none !important; }
+#uptime .site .meta .name { font-weight: 700 !important; font-size: 16px !important; }
+#uptime .site .status { font-weight: 700; }
+#footer {
+  color: #8a95a3 !important;
+  font-size: 12px !important;
+  padding: 8px 0 28px;
+}
+#footer a { color: var(--ws-gold) !important; }
+#footer a:visited { color: var(--ws-gold) !important; }
